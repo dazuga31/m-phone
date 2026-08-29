@@ -1,0 +1,16 @@
+return {
+	id = "mphone.widget-template",
+	sdkVersion = 1,
+	version = "1.0.0",
+	label = "Widget Template",
+	description = "Reference widget for custom HELIX integrations.",
+	developer = "m-phone",
+	provider = "m-phone",
+	web = { entry = "PhoneWidgets/TemplateWidget/web/index.html" },
+	sizes = { "minimal", "medium", "wide" },
+	defaultSize = "medium",
+	defaultEnabled = false,
+	surfaces = { phone = true, tablet = false, desktop = false },
+	permissions = { "player.basic" },
+	order = 900,
+}

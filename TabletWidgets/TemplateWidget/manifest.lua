@@ -1,0 +1,16 @@
+return {
+	id = "mtablet.template-widget",
+	sdkVersion = 1,
+	version = "1.0.0",
+	label = "Tablet Widget Template",
+	description = "Reference widget for tablet-only HELIX integrations.",
+	developer = "m-phone",
+	provider = "m-phone",
+	web = { entry = "TabletWidgets/TemplateWidget/web/index.html" },
+	sizes = { "medium", "wide" },
+	defaultSize = "wide",
+	defaultEnabled = true,
+	surfaces = { phone = false, tablet = true, desktop = false },
+	permissions = { "player.basic" },
+	order = 10,
+}

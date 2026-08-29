@@ -1,0 +1,26 @@
+# Local server configuration and credentials
+PhoneApps/Camera/camera_storage_local.lua
+*.local.lua
+.env
+.env.*
+!.env.example
+
+# Runtime-generated data
+storage/photos/*
+!storage/photos/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+*.bak
+
+# Development and packaging artifacts
+node_modules/
+src/
+_mock/
+*.map
+*.zip
+*.rar
+*.7z
+release-manifest.json

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Tablet Template</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+	<div class="app-shell">
+		<aside class="rail">
+			<div class="brand"><span class="brand-mark">T</span><span><b>Tablet SDK</b><small>Production starter</small></span></div>
+			<nav>
+				<button class="nav-item active" data-page="overview">Overview</button>
+				<button class="nav-item" data-page="patterns">Patterns</button>
+				<button class="nav-item" data-page="bridge">Bridge</button>
+			</nav>
+			<div class="surface-note"><span></span><b>Tablet only</b><small>Phone apps stay isolated.</small></div>
+		</aside>
+		<main>
+			<section class="page active" data-page-panel="overview">
+				<header><div><small>M-TABLET SDK</small><h1>Build for the larger canvas</h1><p>A clean starting point for split views, data tools and touch-friendly Tablet workflows.</p></div><span class="badge">v1 starter</span></header>
+				<div class="metrics"><article><small>Surface</small><b>Tablet</b><span>No Phone fallback</span></article><article><small>Input</small><b>Hybrid</b><span>Mouse, touch and drag</span></article><article><small>Layout</small><b>Wide</b><span>Split-view ready</span></article></div>
+				<div class="feature"><div><small>REFERENCE WORKSPACE</small><h2>Replace the sample, keep the contract</h2><p>Every app owns its manifest, Lua request handler and sandboxed WebUI.</p></div><div class="diagram"><span>Manifest</span><i></i><span>Lua bridge</span><i></i><span>WebUI</span></div></div>
+			</section>
+			<section class="page" data-page-panel="patterns"><header><div><small>DESIGN SYSTEM</small><h1>Tablet interaction patterns</h1><p>Prefer rails, split panes and concise actions over phone-sized stacked screens.</p></div></header><div class="pattern-grid"><article><b>Persistent navigation</b><p>Keep primary sections visible in a left rail.</p></article><article><b>Responsive workspace</b><p>Use the width for primary data and contextual details.</p></article><article><b>Hybrid input</b><p>Support click, hold, drag, swipe and touch.</p></article><article><b>Isolated runtime</b><p>Keep the app logic inside its own folder.</p></article></div></section>
+			<section class="page" data-page-panel="bridge"><header><div><small>LUA BRIDGE</small><h1>Runtime contract</h1><p>The shell handles discovery; your app handles only its own actions.</p></div></header><div class="bridge-card"><pre>surface = "tablet"\naction = "ping"\nprovider = "m-phone"</pre><button id="ping">Test bridge contract</button><div id="result">Ready for a request.</div></div></section>
+		</main>
+	</div>
+	<script src="./app.js"></script>
+</body>
+</html>

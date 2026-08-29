@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero" aria-labelledby="welcome-title">
+      <div class="hero-copy">
+        <div class="eyebrow">M-PHONE SDK</div>
+        <h1 id="welcome-title">Ready to build</h1>
+        <p>A production starting point for custom apps powered by your own HTML, CSS, JavaScript and Lua.</p>
+      </div>
+      <div id="connection" class="status-pill" data-state="connecting">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="status">Connecting</span>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="runtime-title">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">RUNTIME</div>
+          <h2 id="runtime-title">App context</h2>
+        </div>
+        <span id="surface" class="surface-badge">--</span>
+      </div>
+      <div class="metric-grid">
+        <div class="metric"><span>Language</span><strong id="language">--</strong></div>
+        <div class="metric"><span>SDK version</span><strong id="sdk-version">--</strong></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bridge-title">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">BRIDGE</div>
+          <h2 id="bridge-title">Lua request</h2>
+        </div>
+      </div>
+      <p class="section-description">Send a sandboxed request through m-phone and handle it inside this app's server.lua.</p>
+      <button id="ping" class="primary-action" type="button" disabled>
+        <span>Ping Lua server</span>
+        <span class="action-arrow" aria-hidden="true">&rarr;</span>
+      </button>
+    </section>
+
+    <section class="response-section" aria-live="polite" aria-atomic="true">
+      <div class="response-heading">
+        <span>LAST RESPONSE</span>
+        <button id="clear-output" type="button">Clear</button>
+      </div>
+      <pre id="output">Waiting for the phone runtime...</pre>
+    </section>
+  </main>
+  <script src="/m-phone/web/sdk/m-phone-sdk.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

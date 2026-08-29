@@ -1,0 +1,25 @@
+return {
+	id = "mtablet.template",
+	sdkVersion = 1,
+	version = "1.0.0",
+	label = "Tablet Template",
+	description = "Production starter for wide HELIX Tablet applications.",
+	developer = "m-phone",
+	provider = "m-phone",
+	icon = "TabletApps/TemplateApp/web/icon.svg",
+	web = {
+		entry = "TabletApps/TemplateApp/web/index.html",
+		mode = "sandboxed",
+	},
+	surfaces = {
+		phone = false,
+		desktop = false,
+		tablet = true,
+		pos = false,
+	},
+	installable = true,
+	defaultInstalled = true,
+	category = "development",
+	permissions = { "player.basic", "notifications" },
+	order = 10,
+}

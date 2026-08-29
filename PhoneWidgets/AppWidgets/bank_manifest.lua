@@ -1,0 +1,1 @@
+return { id = "mphone.bank", sdkVersion = 1, version = "1.0.0", label = "Bank", description = "Account balance and recent activity.", developer = "m-phone", provider = "m-phone", web = { entry = "PhoneWidgets/AppWidgets/web/index.html" }, sizes = { "minimal", "medium", "wide" }, defaultSize = "medium", defaultEnabled = false, permissions = {}, order = 80 }

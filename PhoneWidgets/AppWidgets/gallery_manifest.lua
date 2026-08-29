@@ -1,0 +1,1 @@
+return { id = "mphone.gallery", sdkVersion = 1, version = "1.0.0", label = "Gallery", description = "Recent photos and camera shortcuts.", developer = "m-phone", provider = "m-phone", web = { entry = "PhoneWidgets/AppWidgets/web/index.html" }, sizes = { "minimal", "medium", "wide" }, defaultSize = "medium", defaultEnabled = false, permissions = {}, order = 60 }
