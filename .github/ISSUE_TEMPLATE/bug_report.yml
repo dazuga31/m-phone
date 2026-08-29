@@ -1,0 +1,97 @@
+name: Bug report
+description: Report a reproducible m-phone runtime or integration problem.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include passwords, API keys, databases, player media, or exploit details.
+        Security issues must use private vulnerability reporting.
+
+  - type: input
+    id: version
+    attributes:
+      label: m-phone version
+      description: Release tag or commit hash.
+      placeholder: v0.9.1-alpha
+    validations:
+      required: true
+
+  - type: input
+    id: helix_build
+    attributes:
+      label: HELIX build
+      description: Include whether this is Studio, standalone client, or dedicated server.
+      placeholder: HELIX Studio build ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Phone
+        - Tablet
+        - App SDK
+        - Widget SDK
+        - Camera or Gallery
+        - Communications
+        - Parking
+        - Database
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Relevant configuration
+      description: Include providers and feature flags, with all credentials removed.
+      render: lua
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start ...
+        2. Open ...
+        3. Select ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Start with the first related error and include surrounding lines.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I removed credentials, databases, and private player data.
+          required: true
+        - label: I tested whether the issue also occurs in HELIX Studio.
+          required: true
+        - label: I reviewed the troubleshooting guide.
+          required: true

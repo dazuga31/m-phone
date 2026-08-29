@@ -1,5 +1,9 @@
 # m-phone
 
+[![Validation](https://github.com/dazuga31/m-phone/actions/workflows/validate.yml/badge.svg)](https://github.com/dazuga31/m-phone/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/dazuga31/m-phone?include_prereleases)](https://github.com/dazuga31/m-phone/releases)
+[![License](https://img.shields.io/github/license/dazuga31/m-phone)](LICENSE)
+
 `m-phone` is an install-ready HELIX communication and device resource with Phone, Tablet, camera, gallery, communication, service Apps, and a compiled production WebUI.
 
 This repository ships the compiled WebUI. React/TypeScript source and App/Widget template projects are distributed separately. Server owners configure integrations through Lua and do not need a JavaScript toolchain.
