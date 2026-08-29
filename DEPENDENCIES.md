@@ -5,12 +5,14 @@
 Start these packages before `m-phone`:
 
 1. `qb-core`
-2. `m-phone`
 
 `qb-core` provides the current player, cash, metadata, and the default `qb`
 bank provider. Set `Config.Use.Bank = "mbank"` to delegate accounts and
 transactions to `m-banking`. Other domain resources are optional and only
 needed when their corresponding features are enabled.
+
+Start `m-phone` after `qb-core` and after every optional provider required by an
+enabled feature.
 
 ## Optional packages
 

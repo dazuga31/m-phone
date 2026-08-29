@@ -17,5 +17,10 @@ rewards, jobs, documents, and inventory changes must be validated server-side.
 
 ## Reporting
 
-Do not publish exploit details or credentials in a public issue. Contact the
-maintainer privately before opening a security-related report.
+Do not publish exploit details or credentials in a public issue. Submit a
+[private security advisory](https://github.com/dazuga31/m-phone/security/advisories/new)
+with the affected version, reproduction steps, impact, and any proposed fix.
+
+Private vulnerability reporting is enabled for the GitHub repository. If the
+form is unavailable, open a public issue containing no exploit details and ask
+the maintainer for a private contact channel.

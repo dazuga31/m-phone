@@ -6,6 +6,7 @@ Use [TemplateApp](TemplateApp/README.md) as the copy-ready SDK example. Complex 
 
 Current modules:
 
+- [Bank](Bank/README.md)
 - [Camera and Gallery](Camera/README.md)
 - [Courier](Courier/README.md)
 - [CreatorLink](CreatorLink/README.md)

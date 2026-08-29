@@ -1,4 +1,9 @@
-# m-phone — Vault Release Target
+# m-phone - Historical Vault Release Plan
+
+> Historical planning note: this file is retained as architecture history.
+> Current GitHub installation, dependency, security, and release requirements
+> are authoritative in [README.md](README.md),
+> [INSTALLATION.md](INSTALLATION.md), and the linked public documentation.
 
 ## 1. Goal
 

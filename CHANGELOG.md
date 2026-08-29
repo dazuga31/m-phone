@@ -2,6 +2,19 @@
 
 All notable public runtime changes will be documented in this file.
 
+## [0.9.1-alpha] - 2026-08-29
+
+- Added complete public configuration, controls, database, migration,
+  troubleshooting, compatibility, permissions, events, and App-development
+  documentation.
+- Added contributor and third-party licensing guidance.
+- Added private GitHub vulnerability-reporting instructions.
+- Replaced workspace-only documentation links with standalone repository-safe
+  references.
+- Corrected required package ordering and expanded the root documentation index.
+- Documented current alpha limitations without changing Lua or WebUI runtime
+  behavior.
+
 ## [0.9.0-alpha] - 2026-08-29
 
 - Prepared the install-ready GitHub distribution with compiled WebUI.

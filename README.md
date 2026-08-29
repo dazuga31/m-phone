@@ -11,7 +11,7 @@ be exposed through the App Store and server configuration.
 ## Quick start
 
 1. Download or clone this repository as `m-phone` inside the World scripts directory.
-2. Install and start every package listed in `DEPENDENCIES.md`.
+2. Install `qb-core` and only the optional providers used by enabled features.
 3. Review `config.lua`.
 4. Configure camera storage only when Camera uploads are enabled.
 5. Start `m-phone` after its required dependencies.
@@ -19,16 +19,34 @@ be exposed through the App Store and server configuration.
 
 ## Documentation
 
-- `INSTALLATION.md` - installation and first-run checks.
-- `CONFIGURATION.md` - feature switches, map profile, and item images.
-- `DEPENDENCIES.md` - required and optional integrations.
-- `CUSTOM_APPS.md` - external Phone and Tablet App SDK.
-- `CUSTOM_WIDGETS.md` - external Phone and Tablet Widget SDK.
-- `API.md` - conventional public API entrypoint.
-- `EXPORTS.md` - implemented Lua/browser APIs and the proposed public API roadmap.
-- `COMPONENTS.md` - directory ownership and extraction boundaries.
-- `SECURITY.md` - credential handling and vulnerability reporting guidance.
-- `CHANGELOG.md` - public runtime release history.
+### Installation and operation
+
+- [Installation](INSTALLATION.md) - installation, camera setup, and first-run checks.
+- [Configuration](CONFIGURATION.md) - complete public `config.lua` reference.
+- [Dependencies](DEPENDENCIES.md) - required and optional integrations.
+- [Controls](CONTROLS.md) - default Phone and parking-meter keys.
+- [Database](DATABASE.md) - SQLite ownership, tables, backup, and recovery.
+- [Migration](MIGRATION.md) - fresh installs, upgrades, and legacy extraction.
+- [Troubleshooting](TROUBLESHOOTING.md) - common failures and bug-report checklist.
+- [Compatibility](COMPATIBILITY.md) - supported providers, surfaces, and alpha limits.
+
+### Development and API
+
+- [API](API.md) - public API entrypoint.
+- [Exports](EXPORTS.md) - implemented Lua/browser APIs and proposed roadmap.
+- [App development](APP_DEVELOPMENT.md) - production App integration workflow.
+- [Custom Apps](CUSTOM_APPS.md) - sandboxed Phone and Tablet App SDK.
+- [Custom Widgets](CUSTOM_WIDGETS.md) - sandboxed Widget SDK.
+- [Events](EVENTS.md) - public event policy and lifecycle boundaries.
+- [Permissions](PERMISSIONS.md) - trust model and server validation.
+- [Components](COMPONENTS.md) - directory ownership and extraction boundaries.
+- [Contributing](CONTRIBUTING.md) - scope, checks, and pull-request guidance.
+
+### Project policy
+
+- [Security](SECURITY.md) - credentials and private vulnerability reporting.
+- [Third-party notices](THIRD_PARTY_NOTICES.md) - licensing and asset boundaries.
+- [Changelog](CHANGELOG.md) - public runtime release history.
 
 ## Current status
 
@@ -38,4 +56,5 @@ This package is in alpha. APIs and payload contracts may change before `1.0.0`.
 
 The Lua runtime and compiled `m-phone` distribution are released under the
 [MIT License](LICENSE). Third-party trademarks, game assets, fonts, and media
-remain subject to their respective owners and licenses.
+remain subject to their respective owners and licenses. See
+[Third-Party Notices](THIRD_PARTY_NOTICES.md).

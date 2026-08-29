@@ -4,4 +4,6 @@ This adapter forwards lightweight Phone/Tablet reads and trusted supply-order in
 
 Supported internal calls cover readiness, profile creation, order history, profile/status, active route, and supply-order create/delete operations. Legacy helper aliases remain while the compiled UI is migrated.
 
-The full public domain contract is documented in [../../../m-trucker/API.md](../../../m-trucker/API.md). This folder must not duplicate Trucker persistence or gameplay validation.
+The full public domain contract is documented in `m-trucker/API.md` in the
+separately distributed provider resource. This folder must not duplicate
+Trucker persistence or gameplay validation.

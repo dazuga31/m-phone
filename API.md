@@ -2,6 +2,10 @@
 
 This file is the conventional API entrypoint for `m-phone`. The detailed status, signatures, trust levels, browser bridge, and proposed APIs live in [EXPORTS.md](EXPORTS.md).
 
+For integration structure and security boundaries, also read
+[APP_DEVELOPMENT.md](APP_DEVELOPMENT.md),
+[EVENTS.md](EVENTS.md), and [PERMISSIONS.md](PERMISSIONS.md).
+
 ## App SDK
 
 - `RegisterApp(manifest)` - client and server registration.

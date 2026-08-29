@@ -10,4 +10,6 @@ This folder is the narrow Phone presentation for Courier assignments, status, co
 - Accept, complete, or cancel a job.
 - Print the authoritative invoice for an owned assignment.
 
-Job availability, ownership, reward, progression, and invoice issuance are validated by `m-courier`. See [../../../m-courier/API.md](../../../m-courier/API.md).
+Job availability, ownership, reward, progression, and invoice issuance are
+validated by `m-courier`. See `m-courier/API.md` in the separately distributed
+provider resource.

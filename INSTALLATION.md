@@ -4,7 +4,7 @@
 
 1. Download the latest source archive or clone the repository.
 2. Place it in the World scripts directory using the exact folder name `m-phone`.
-3. Add every required package from `DEPENDENCIES.md` before `m-phone`.
+3. Start `qb-core` and each enabled optional provider before `m-phone`.
 4. Add optional integration packages used by enabled Apps.
 5. Review `config.lua`, especially `Config.Features`, `Config.ActiveMap`, and `Config.InventoryImages`.
 6. Start the World and inspect `[m-phone][dependency]` startup messages.
@@ -55,3 +55,6 @@ explicitly. See `CONFIGURATION.md` for overrides and fallback behavior.
 - Startup dependency lines distinguish configured and inactive integrations; they do not probe HELIX export proxies.
 - A missing provider affects only the enabled App that calls it, not the base Phone runtime.
 - Item images load from the configured inventory provider.
+
+For upgrades and database backups, continue with [MIGRATION.md](MIGRATION.md)
+and [DATABASE.md](DATABASE.md).

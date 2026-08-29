@@ -9,6 +9,8 @@
 
 The adapter normalizes profiles, balances, credit/debit results, transfers, ATM operations, and debit notifications. It also installs temporary legacy database method aliases used by existing presentation modules.
 
-This module has no cross-resource exports. External consumers should call [../../../m-banking/API.md](../../../m-banking/API.md) or their selected provider directly.
+This module has no cross-resource exports. External consumers should call the
+public API documented in `m-banking/API.md` in the separately distributed
+provider resource, or call their selected bank provider directly.
 
 All amounts are normalized as integer pence at the device boundary.
